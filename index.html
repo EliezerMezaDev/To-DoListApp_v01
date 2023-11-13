@@ -4,11 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>To Do List App | V01</title>
+
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="container-all">
+      <main class="app">
+        <header class="app__head">
+          <img src="images/icon.png" alt="logo" class="app__logo" />
+          <h1>To-Do List <i>App</i></h1>
+        </header>
 
-    <h1>hola mundo</h1>
+        <div class="app__form">
+          <div class="inputWrapper">
+            <input type="text" id="task-input" placeholder="add your task..." />
 
+            <button onclick="addTask()">Add</button>
+          </div>
+        </div>
+
+        <ul class="app__tasks" id="task-list"></ul>
+      </main>
+    </div>
   </body>
 
   <script src="main.js"></script>
